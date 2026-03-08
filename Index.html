@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jamii Clinic - Modern Healthcare Services</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+            color: #333;
+        }
+
+        /* Header with gradient */
+        header {
+            background: linear-gradient(to right, #4CAF50, #C0C0C0);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+
+        /* Services Section */
+        #services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .service-card {
+            background: rgba(255, 255, 255, 0.9); /* Transparency */
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+        }
+
+        .service-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .service-card h3 {
+            font-size: 1.5em;
+            margin: 15px 0 5px;
+            color: #4CAF50;
+        }
+
+        .service-card p {
+            font-size: 1.2em;
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        /* Floating Action Buttons */
+        .fab {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: linear-gradient(to bottom, #4CAF50, #388E3C);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            font-size: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            transition: background 0.3s ease;
+            z-index: 1000;
+        }
+
+        .fab:hover {
+            background: linear-gradient(to bottom, #388E3C, #2E7D32);
+        }
+
+        .fab-secondary {
+            bottom: 100px; /* Stacked above the primary FAB */
+            background: linear-gradient(to bottom, #C0C0C0, #A9A9A9);
+        }
+
+        .fab-secondary:hover {
+            background: linear-gradient(to bottom, #A9A9A9, #808080);
+        }
+
+        /* Footer */
+        footer {
+            background: linear-gradient(to right, #4CAF50, #C0C0C0);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Jamii Clinic</h1>
+        <p>Your Trusted Partner in Health and Wellness</p>
+    </header>
+
+    <section id="services">
+        <div class="service-card">
+            <img src="https://media.gettyimages.com/id/1412633727/photo/male-doctor-consulting-patient-in-hospital-room.jpg?s=1024x1024&w=gi&k=20&c=Pyh8pu_9jAXgPEjL5mRCBZfkbloyNin0EK-Fzr5OhK4=" alt="General Consultation">
+            <h3>General Consultation</h3>
+            <p>500 KSH</p>
+        </div>
+        <div class="service-card">
+            <img src="https://i.ytimg.com/vi/OPydq_gNNY0/maxresdefault.jpg" alt="Vaccination">
+            <h3>Vaccination</h3>
+            <p>1000 KSH</p>
+        </div>
+        <div class="service-card">
+            <img src="https://cdn.prod.website-files.com/660c6c7d2da717bee1219ec1/66287a09c094773994f3138e_tooth.png" alt="Dental Checkup">
+            <h3>Dental Checkup</h3>
+            <p>1500 KSH</p>
+        </div>
+        <div class="service-card">
+            <img src="https://yourtotalvision.com/wp-content/uploads/2021/09/eye-exam-young-woman-optometrist-checking-eye-2.jpg" alt="Eye Examination">
+            <h3>Eye Examination</h3>
+            <p>800 KSH</p>
+        </div>
+        <div class="service-card">
+            <img src="https://www.trainingdirectusa.com/wp-content/uploads/2022/07/is-a-phlebotomist-the-same-as-a-medical-lab-technician.jpg" alt="Laboratory Tests">
+            <h3>Laboratory Tests</h3>
+            <p>2000 KSH</p>
+        </div>
+        <div class="service-card">
+            <img src="https://dunbarmedical.com/wp-content/uploads/2022/04/Physiotherapist-treating-elderly-patient.jpg" alt="Physiotherapy">
+            <h3>Physiotherapy</h3>
+            <p>2500 KSH</p>
+        </div>
+        <div class="service-card">
+            <img src="https://www.makatimed.net.ph/wp-content/uploads/2021/02/Pregnancy-Checkups-Why-Are-They-Important.jpg" alt="Maternity Care">
+            <h3>Maternity Care</h3>
+            <p>5000 KSH</p>
+        </div>
+        <div class="service-card">
+            <img src="https://www.newportchildren.com/wp-content/uploads/PediatricianRelationshipNewport.jpg" alt="Pediatric Care">
+            <h3>Pediatric Care</h3>
+            <p>1000 KSH</p>
+        </div>
+        <div class="service-card">
+            <img src="https://www.starmedicalassociates.com/wp-content/uploads/sites/539/2020/09/iStock-1129664861.jpg" alt="Nutrition Counseling">
+            <h3>Nutrition Counseling</h3>
+            <p>1200 KSH</p>
+        </div>
+        <div class="service-card">
+            <img src="https://www.rushmemorial.com/wp-content/uploads/2023/11/RMH_Int_ER-1024x683.jpg" alt="Emergency Services">
+            <h3>Emergency Services</h3>
+            <p>3000 KSH</p>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2026 Jamii Clinic. All rights reserved.
+    </footer>
+
+    <!-- Floating Buttons -->
+    <button class="fab" onclick="alert('Booking an appointment...')">+</button>
+    <button class="fab fab-secondary" onclick="alert('Contact us...')">?</button>
+
+</body>
+</html>
